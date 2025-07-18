@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loan Eligibility Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Loan Eligibility Checker</h1>
+  
+  <form id="loanForm">
+    <label for="age">Age:</label>
+    <input type="number" id="age" required><br>
+
+    <label for="income">Monthly Income ($):</label>
+    <input type="number" id="income" required><br>
+
+    <label for="loanAmount">Loan Amount ($):</label>
+    <input type="number" id="loanAmount" required><br>
+
+    <label for="employment">Employment Status:</label>
+    <select id="employment" required>
+      <option value="employed">Employed</option>
+      <option value="self-employed">Self-Employed</option>
+      <option value="unemployed">Unemployed</option>
+    </select><br>
+
+    <button type="submit">Check Eligibility</button>
+  </form>
+
+  <p id="result"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
